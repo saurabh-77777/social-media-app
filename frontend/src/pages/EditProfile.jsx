@@ -17,7 +17,7 @@ const EditProfile = () => {
     const fetchProfile = async () => {
       try {
         const res = await axios.get(
-          "import.meta.env.VITE_API_URL/api/v1/profile",
+          "https://social-media-app-2-m298.onrender.com/api/v1/profile",
           { withCredentials: true }
         );
 
