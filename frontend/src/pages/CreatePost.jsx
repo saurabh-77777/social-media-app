@@ -24,7 +24,7 @@ const CreatePost = () => {
       setLoading(true);
 
       await axios.post(
-        "http://localhost:5000/api/v1/create-post",
+        "import.meta.env.VITE_API-URL/api/v1/create-post",
         formData,
         {
           withCredentials: true,
