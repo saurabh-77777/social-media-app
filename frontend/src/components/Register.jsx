@@ -24,7 +24,7 @@ const Register = () => {
 
     try {
       const res = await axios.post(
-        "import.meta.env.VITE_API-URL/api/v1/register",
+        "import.meta.env.VITE_API_URL/api/v1/register",
         data,
       );
 
