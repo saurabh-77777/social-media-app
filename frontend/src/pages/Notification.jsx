@@ -8,7 +8,7 @@ const Notification = () => {
     const fetchNotifications = async () => {
       try {
         const res = await axios.get(
-          "import.meta.env.VITE_API-URL/api/v1/profile",
+          "import.meta.env.VITE_API_URL/api/v1/profile",
           { withCredentials: true }
         );
         setUser(res.data);
