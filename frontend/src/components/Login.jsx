@@ -16,7 +16,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("https://social-media-app-1-gkia.onrender.com/api/v1/login", data,
+      const res = await axios.post("import.meta.env.VITE_API-URL/api/v1/login", data,
   {
     withCredentials: true, 
   });
