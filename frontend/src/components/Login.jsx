@@ -9,6 +9,8 @@ const Login = () => {
     password: "",
   });
 
+  const API = import.meta.env.VITE_API_URL;
+
   const handleChange = (e) => {
     setData({ ...data, [e.target.name]: e.target.value });
   };
@@ -16,7 +18,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5000/api/v1/login", data,
+      const res = await axios.post(`${API}/api/v1/login`, data,
   {
     withCredentials: true, 
   });

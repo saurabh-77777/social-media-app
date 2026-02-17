@@ -5,11 +5,13 @@ const Messages = () => {
   const [user, setUser] = useState(null);
   const [selectedChat, setSelectedChat] = useState(null);
 
+  const API = import.meta.env.VITE_API_URL;
+
   useEffect(() => {
     const fetchData = async () => {
       try {
         const res = await axios.get(
-          "http://localhost:5000/api/v1/profile",
+          `${API}/api/v1/profile`,
           { withCredentials: true }
         );
         setUser(res.data);

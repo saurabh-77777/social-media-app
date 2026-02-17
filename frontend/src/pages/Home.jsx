@@ -13,6 +13,8 @@ const Home = () => {
   const [dark, setDark] = useState(false);
   const navigate = useNavigate();
 
+  const API = import.meta.env.VITE_API_URL;
+
   // ================= THEME SETUP =================
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
@@ -44,7 +46,7 @@ const Home = () => {
     const fetchData = async () => {
       try {
         const res = await axios.get(
-          "http://localhost:5000/api/v1/profile",
+          `${API}/api/v1/profile`,
           { withCredentials: true }
         );
         setUser(res.data);

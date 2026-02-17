@@ -11,13 +11,15 @@ const EditProfile = () => {
   const [preview, setPreview] = useState(null);
   const [loading, setLoading] = useState(false);
 
+  const API = import.meta.env.VITE_API_URL;
+
   const navigate = useNavigate();
 
   useEffect(() => {
     const fetchProfile = async () => {
       try {
         const res = await axios.get(
-          "http://localhost:5000/api/v1/profile",
+          `${API}/api/v1/profile`,
           { withCredentials: true }
         );
 
@@ -56,7 +58,7 @@ const EditProfile = () => {
       }
 
       await axios.put(
-        "http://localhost:5000/api/v1/update-profile",
+        `${API}/api/v1/update-profile`,
         formData,
         {
           withCredentials: true,

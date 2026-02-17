@@ -11,6 +11,8 @@ const Register = () => {
     password: "",
   });
 
+  const API = import.meta.env.VITE_API_URL;
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setData((prev) => ({
@@ -24,7 +26,7 @@ const Register = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/v1/register",
+        `${API}/api/v1/register`,
         data,
       );
 

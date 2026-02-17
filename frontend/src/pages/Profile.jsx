@@ -8,9 +8,11 @@ const Profile = () => {
   const [user,setUser] = useState(null);
   const navigate = useNavigate();
 
+  const API = import.meta.env.VITE_API_URL;
+
   useEffect(() => {
   const fetchProfile = async () => { 
-    const res = await axios.get("http://localhost:5000/api/v1/profile",
+    const res = await axios.get(`${API}/api/v1/profile`,
     {
     withCredentials:true,
   });
