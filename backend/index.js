@@ -13,7 +13,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 app.use(
   cors({
-    origin: "https://social-media-app-1-gkia.onrender.com", 
+    origin: "http://localhost:5173", 
     credentials: true,             
   })
 );
