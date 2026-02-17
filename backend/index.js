@@ -13,7 +13,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 app.use(
   cors({
-    origin: "https://social-media-app-seven-ashy-32.vercel.app", 
+    origin: "https://social-media-srk.vercel.app", 
     credentials: true,             
   })
 );
