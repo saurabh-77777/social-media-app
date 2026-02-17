@@ -46,7 +46,11 @@ const Home = () => {
     const fetchData = async () => {
       try {
         const res = await axios.get(
+<<<<<<< HEAD
           `${API}/api/v1/profile`,
+=======
+          "https://social-media-app-2-m298.onrender.com/api/v1/profile",
+>>>>>>> d6dce7d0cfe056023ccc73c6117c325b825c7966
           { withCredentials: true }
         );
         setUser(res.data);

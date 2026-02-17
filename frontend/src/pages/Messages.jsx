@@ -11,7 +11,11 @@ const Messages = () => {
     const fetchData = async () => {
       try {
         const res = await axios.get(
+<<<<<<< HEAD
           `${API}/api/v1/profile`,
+=======
+          "import.meta.env.VITE_API_URL/api/v1/profile",
+>>>>>>> d6dce7d0cfe056023ccc73c6117c325b825c7966
           { withCredentials: true }
         );
         setUser(res.data);

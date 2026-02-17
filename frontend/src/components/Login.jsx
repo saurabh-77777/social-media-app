@@ -18,7 +18,11 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+<<<<<<< HEAD
       const res = await axios.post(`${API}/api/v1/login`, data,
+=======
+      const res = await axios.post("import.meta.env.VITE_API_URL/api/v1/login", data,
+>>>>>>> d6dce7d0cfe056023ccc73c6117c325b825c7966
   {
     withCredentials: true, 
   });
