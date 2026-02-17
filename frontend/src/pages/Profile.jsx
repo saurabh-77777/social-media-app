@@ -12,11 +12,7 @@ const Profile = () => {
 
   useEffect(() => {
   const fetchProfile = async () => { 
-<<<<<<< HEAD
     const res = await axios.get(`${API}/api/v1/profile`,
-=======
-    const res = await axios.get("import.meta.env.VITE_API_URL/api/v1/profile",
->>>>>>> d6dce7d0cfe056023ccc73c6117c325b825c7966
     {
     withCredentials:true,
   });

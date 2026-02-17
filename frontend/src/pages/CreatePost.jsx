@@ -26,11 +26,7 @@ const CreatePost = () => {
       setLoading(true);
 
       await axios.post(
-<<<<<<< HEAD
         `${API}/api/v1/create-post`,
-=======
-        "https://social-media-app-2-m298.onrender.com/api/v1/create-post",
->>>>>>> d6dce7d0cfe056023ccc73c6117c325b825c7966
         formData,
         {
           withCredentials: true,
