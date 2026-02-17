@@ -29,8 +29,6 @@ const Register = () => {
 
         `${API}/api/v1/register`,
 
-        "import.meta.env.VITE_API_URL/api/v1/register",
-
         data,
       );
 
